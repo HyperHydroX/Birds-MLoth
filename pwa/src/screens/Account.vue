@@ -24,6 +24,10 @@ export default {
       })
     }
 
+    const getToken = async () => {
+      console.log(await user?.value.getIdToken())
+    }
+
     return {
       user,
       handleLogOut,
